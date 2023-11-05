@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="error.html">Services</a>
+        <a href="contact-us.html">Contact</a>
+        <a href="New-Realeses.html">New-Realeses</a>
+      </nav>
+
+      <!-- Search Bar -->
+      <form onsubmit="performSearch(); return false;" class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search.." />
+        <button type="submit"><i class="bx bx-search"></i></button>
+      </form>
+    </header>
+
+    <!-- Game 1 and 2 -->
+    <div class="circle-container">
+      <div class="circle">
+        <a
+          href="https://www.epicgames.com/fortnite/en-US/home"
+          class="circle-link"
+        >
+          <div class="circle-image">
+            <img class="game1" src="images/Fortnite.jpeg" alt="Fortnite" />
+          </div>
+          <div class="circle-text"></div>
+        </a>
+      </div>
+      <div class="circle">
+        <a href="https://www.ea.com/games/apex-legends" class="circle-link">
+          <div class="circle-image">
+            <img
+              class="game2"
+              src="images/apex-legends.jpeg"
+              alt="Apex Legends"
+            />
+          </div>
+          <div class="circle-text"></div>
+        </a>
+      </div>
+      <div class="circle">
+        <a href="https://www.callofduty.com" class="circle-link">
+          <div class="circle-image">
+            <img class="game3" src="images/calloduty.jpeg" alt="Call of Duty" />
+          </div>
+          <div class="circle-text"></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Game 3 and 4 -->
+    <div class="circle-container1">
+      <div class="circle">
+        <a href="www.roblox.com" class="circle-link">
+          <div class="circle-image">
+            <img class="game4" src="images/roblox.jpeg" alt="Roblox" />
+          </div>
+          <div class="circle-text"></div>
+        </a>
+      </div>
+      <div class="circle">
+        <a href="https://www.warframe.com/" class="circle-link">
+          <div class="circle-image">
+            <img class="game5" src="images/warframe.jpeg" alt="Warframe" />
+          </div>
+          <div class="circle-text"></div>
+        </a>
+      </div>
+      <div class="circle">
+        <a href="https://www.paladins.com/" class="circle-link">
+          <div class="circle-image">
+            <img class="game6" src="images/paladins.jpeg" alt="Paladins" />
+          </div>
+          <div class="circle-text"></div>
+        </a>
+      </div>
+    </div>
+
+    <style>
+      body {
+        background-image: url(../images/1background.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        scale: 1;
+      }
+
+      .circle {
+        width: 1300px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.9;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 50px;
+        position: relative;
+      }
+
+      .circle-link {
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        margin: 0 20px; /* Adjust the margin to control spacing */
+        padding: 10px; /* Adjust the padding to control spacing */
+      }
+
+      .circle-image img {
+        width: 100px; /* Set the image width as needed */
+        height: 100px; /* Set the image height as needed */
+        border-radius: 50%; /* Create a circular image */
+      }
+
+      .circle-text {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .circle-container,
+      .circle-container1 {
+        width: 1000px;
+        height: 200px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        transform: translateY(200px);
+      }
+
+      img.game1 {
+        transform: translate(-600px, 55px);
+      }
+
+      .search-bar {
+        width: 350px;
+        height: 45px;
+        background: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-bar input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: #ffffff;
+        padding-left: 10px;
+      }
+
+      .search-bar input::placeholder {
+        color: #ffffff;
+      }
+
+      .search-bar button {
+        width: 40px;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      }
+
+      img.game2 {
+        transform: translate(-450px, 3px);
+      }
+
+      img.game3 {
+        transform: translate(-300px, -45px);
+      }
+
+      img.game4 {
+        transform: translate(-600px, 55px);
+      }
+
+      img.game5 {
+        transform: translate(-450px, 3px);
+      }
+
+      img.game6 {
+        transform: translate(-300px, -45px);
+      }
+    </style>
+  </body>
+</html>

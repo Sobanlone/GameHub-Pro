@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(./images/4background.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+      }
+
+      .navbar {
+        text-align: center;
+      }
+
+      .search-bar {
+        text-align: center;
+      }
+
+      .new-game1 {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -550px;
+        margin-top: 200px;
+      }
+
+      .image1 {
+        width: 700px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: -200px;
+      }
+      .image2 {
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="error.html">Services</a>
+        <a href="contact-us.html">Contact</a>
+        <a href="New-Realeses.html">New-Realeses</a>
+      </nav>
+
+      <!-- Search Bar -->
+      <form onsubmit="performSearch(); return false;" class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search.." />
+        <button type="submit"><i class="bx bx-search"></i></button>
+      </form>
+    </header>
+    <div class="new-game1">
+      <img class="image1" src="images/Lordoftherings.webp" alt="Sneak" />
+      <p>
+        Lord of the Rings: Return to Moria Lord of the Rings: Return to Moria
+        Platform(s):- (PC) Release date: October 24, 2023
+      </p>
+    </div>
+    <div class="new-game2">
+      <img class="image2" src="images/Callofdutymodern.webp" alt="Sneak" />
+      <p>
+        Call of Duty: Modern Warfare 3 Modern Warfare 3 Platform(s): (PC, PS5,
+        Xbox Series X) Release date: November 10, 2023
+      </p>
+    </div>
+  </body>
+</html>
